@@ -38,13 +38,26 @@
             $input = 3;
 
             //Act
-            $result = $test_PingPongGenereator->generatePingPongArray($input);
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
             $test_array = [1, 2, 'ping'];
             $this->assertEquals($test_array, $result);
 
         }
-    }
 
+        function test_makePingPong_countPong()
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 5;
+
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+
+            //Assert
+            $test_array = [1, 2, 'ping', 4, 'pong'];
+            $this->assertEquals($test_array, $result);
+        }
+    }
 ?>
