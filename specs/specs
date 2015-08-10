@@ -1,7 +1,7 @@
 Specs in plain language                         Input                         Output
 
-1)Print user number                             100                           100
-2)Count to user number                          100                           1, 2, 3, ...100
-3)Count to user number with ping                100                           1, 2, ping,4, 5, ping, ...100
-4)Count to user number with pong                100                           (...,4, pong, ping, 7 ,...100)
-5)Count to user number w/ping-pong              100                           (ping, 13, 14, ping-pong,16, ...100)
+1)Print user number                             1                             [1]
+2)Count to user number                          2                             [1,2]
+3)Count to user number with ping                3                             [1,2,'ping']
+4)Count to user number with pong                5                             [1, 2, 'ping', 4, 'pong']
+5)Count to user number w/ping-pong              15                            [1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'ping-pong']
